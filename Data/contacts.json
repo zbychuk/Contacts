@@ -1,0 +1,175 @@
+﻿{
+  "GBR": {
+    "orgname": "KOD UK",
+    "orgemail": "contact@koduk.org",
+    "orgwebsite": "http://koduk.org",
+    "regionname": "United Kingdom",
+    "people": {
+      "Janusz Kali Kaliszczak": {
+        "email": "janusz.kaliszczak@koduk.org",
+        "comment": "Koordynator KOD Polonia UK, przewodniczący zarządu stowarzyszenia KOD UK; zawodowo UI developer / UX designer; Gdańszczanin od 4 lat w Londynie;"
+      },
+      "Zbyszek Swirski": {
+        "email": "zbyszek.swirski@koduk.org",
+        "comment": "Współkoordynator KOD Polonia UK, członek zarządu stowarzyszenia KOD UK. Zawodowo - informatyk dluzej niz chcialby sie przyznac; Od 24 lat poza Polska, od 20 lat na stale w Wielkiej Brytanii"
+      },
+      "Joanna Gos": { "comment": "Członek KOD Polonia UK, członek zarządu stowarzyszenia KOD UK" },
+      "Katarzyna Kasia Kozdon": { "commen": "Członek KOD Polonia UK, Skarbnik stowarzyszenia KOD UK" },
+      "Paweł Wargan": { "comment": "Członek KOD Polonia UK, członek zarządu stowarzyszenia KOD UK" },
+      "Mariusz Gąsior": { "comment": "Członek KOD Polonia UK, członek zarządu stowarzyszenia KOD UK" },
+      "Antoni Otffinowski": { "comment": "Członek KOD Polonia UK, członek zarządu stowarzyszenia KOD UK" }
+    }
+  },
+  "PRT": {
+    "regionname": "Portugal",
+    "people": {
+      "Kamil Otto Walter-Popławski ": {
+        "email": "kamil-otto@walter-poplawski.com",
+        "comment": "Śląski ekonomista wykształcony na Politechnice Oksfordzkiej. Założyciel i koordynator KOD Portugalia, administrator grupy KOD_POLONIA (teraz “POLONIA dla KOD”), właściciel domeny committeedefencedemocracy.org, committeedefencedemocracy.com. ",
+        "phone": "+ 48 798 987 004, +351 92 666 1000"
+      }
+    }
+  },
+  "POL": {
+    "regionname": "Poland",
+    "people": {
+      "Gia Baczewska": {
+        "email": "agnieszka.gia.baczewska@gmail.com",
+        "comment": "członek zespołu KOD Interational, KOD TT International, KOD FP International, admin KOD WZZ, zawodowo pracownik administracji UW (zamówienia publiczne, projekty krajowe i unijne)"
+      },
+      "Magdalena Kijowska": { "comment": "pełnomocnik Zarządu KOD ds. kontaktów z KOD USA i KOD Kanada  " },
+      "Jacek Rajewski": {
+        "comment": " - członek Zespołu TT KOD i admin KOD WZZ; zawodowo producent kultury, fundraiser i ekspert mediów społecznościowych; ",
+        "email": "jacek@cultuurarchitect.nl"
+      },
+      "Lidka Radzio": {
+        "comment": "redaktorka anglojęzycznego Twittera i FanPage; copywriterka, specjalistka od mediów elektronicznych i marketingu w Internecie; ",
+        "email": "lidka.radzio@gmail.com"
+      }
+    }
+  },
+  "NOR": {
+    "regionname": "Norway",
+    "people": {
+      "Igor Devold": {
+        "email": "igor@aurorafilm.no",
+        "phone": "+47 41514208",
+        "comment": "rezyser. Administrator Norwegia"
+      }
+    }
+  },
+  "BEL": {
+    "regionname": "Belgium",
+    "people": {
+      "Jagoda Gogolewska": {
+        "comment": "KOD Belgia, KOD International"
+      },
+      "Katarzyna Mortoń": {
+        "comment": "Koordynatorka KOD International (KOD FP Int + członek zespołu KOD Twitter) oraz KOD Belgia |Specialista ds. budowy potencjału społeczeństwa obywatelskiego i mediów, blogger polityczny ",
+        "email": "katarzyna.morton@komitetobronydemokracji.pl"
+      }
+    }
+  },
+  "ESP": {
+    "regionname": "Spain",
+    "people": {
+      "Ireneusz Janczur": {
+        "email": "ireneusz.janczur@outlook.com",
+        "comment": "koordynator KOD Polonia Hiszpania"
+      }
+    }
+  },
+  "IRL": {
+    "regionname": "Ireland",
+    "people": {
+      "Katarzyna Kaczor-O’Cruadhliocht": {
+        "email": "kodpoloniairlandia@gmail.com",
+        "comment": "koordynator KOD Irlandia, archeolog, researcher, pracuje takze z dziecmi (rowniez specjalnej troski); Czestochowianka, a obecnie takze i mieszkanka Dublina"
+      }
+    }
+  },
+  "AUT": {
+    "regionname": "Austria",
+    "people": {
+      "Monika Stolarska": {
+        "email": "",
+        "comment": "koordynator KOD Polonia Austria, Warszawianka z Zoliborza, ekonomista (cybernetyk ekonomiczny i analityk), ponad 25 lat poza granicami kraju"
+      }
+    }
+  },
+  "AUS": {
+    "regionname": "Australia",
+    "people": {
+      "Dorota Steinberg": {
+        "comment": "KOD Australia Oceania, Melbourne. Warszawianka ze Śródmieścia z wykształcenia prawnik prawie 30 lat poza krajem.",
+        "phone": "+61 414 792 949 ",
+        "email": "Dorotasteinberg@gmail.com"
+      }
+    }
+  },
+  "USA": {
+    "regionname": "United States",
+    "people": {
+      "Tom Kokocinski": {
+        "comment": "koordynator KOD Polonia USA"
+      },
+      "Peter Jan Włodarczyk": {
+        "email": "piotr@kodpoloniausa.com",
+        "comment": "koordynator KOD Polonia USA"
+      },
+      "Jacek Duda": {
+        "email": "jacek@kodpoloniausa.com",
+        "comment": " informatyk, koordynator KOD Polonia USA NYC"
+      },
+      "Kinga Kosmala": {
+        "email": "kinga@kodpoloniausa.org",
+        "comment": "Profesor, koordynator KOD Polonia USA Central"
+      },
+      "Dobiesław Pałeczka - Dobek": {
+        "comment": "psycholog, psychoterapeuta psychoanalityczny, również informatyk, koordynator KOD_Zachód",
+        "email": "dobek.kod@gmail.com"
+      },
+      "Katarzyna Kisztelińska": {
+        "comment": "Koordynatorka KOD Polonia USA - Washington DC metro area (Maryland, DC, Virginia). Z zawodu grafik i art director oraz wiele lat doświadczenia w organizacji live events.",
+        "email": "kkisztelinska@gmail.com"
+      },
+      "Ewa Stamper": {
+        "comment": "Ko-Koordynator KOD Polonia USA Zachod. Z Warszawy; ostatnio dzieli czas pomiedzy San Francisco Bay Area oraz Oahu, Hawaii. Psycholog kliniczny i poznawczy z wieloletnia praktyka. ",
+        "email": "ewastamperphd@gmail.com"
+      }
+    }
+  },
+
+  "DEU": {
+    "regionname": "Germany",
+    "people": {
+      "Anna Krenz": {
+        "email": "krenz@zero-project.org",
+        "phone": "+49 177 2725 096",
+        "comment": "(strategia, koncepcje, grafika) - koordynator KOD Berlin, Koordynator projektu Przestrzeń Wolności, KOD International, współzałożyciel i członek stowarzyszenia Mitte21 (Berlin/Niemcy). Artysta, ilustrator, dziennikarz, teoretyk kultury/architektury/miast. Pracuje w energiach odnawialnych w Danii."
+      },
+      "Arkadiusz Lewandowski": {
+        "email": "arkadiusz.lewandowski@t-online.de",
+        "phone": "+49 4921 9537305",
+        "comment": "Arkadiusz Lewandowski - Koordynator i administrator KOD Polonia DE , członek KOD DŚ, KOD WZZ, współzałożyciel i członek stowarzyszenia Mitte21 DE: Nauczyciel / Rehabilitant - masażysta: Właściciel firmy Sport-Med."
+      }
+    }
+  },
+
+  "CAN": {
+    "people": {
+      "regionname": "Canada",
+      "Bogumil Pacak-Gamalski": {
+        "comment": "wydawca, eseista, poeta. p.o. Kordynatora KOD_Canada; admin KOD Vancouver, współpracownik KOD Zachodnie USA; ",
+        "email": "bogumil.koder@gmail.com"
+      }
+    },
+    "DNK": {
+      "regionname": "Denmark",
+      "people": {
+        "Maya Sol Niemelä": { "comment": "Koordynator i administrator KOD Polonia Dania, japonistyka, studia mniejszosci i studia miedzykulturowe, antropolog kultury, analityk, psycholog, researcher." }
+      }
+    }
+
+  }
+}
