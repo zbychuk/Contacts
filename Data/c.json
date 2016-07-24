@@ -1,0 +1,25 @@
+{
+  "GBR": {
+    "orgname": "KOD UK",
+    "orgemail": "contact@koduk.org",
+    "orgwebsite": "http://koduk.org",
+    "regionname": "United Kingdom",
+    "people": {
+      "Janusz Kali Kaliszczak": {
+        "email": "janusz.kaliszczak@koduk.org",
+        "comment": "Koordynator KOD Polonia UK, przewodniczący zarządu stowarzyszenia KOD UK; zawodowo UI developer / UX designer; Gdańszczanin od 4 lat w Londynie;"
+      },
+      "Zbyszek Swirski": {
+        "email": "zbyszek.swirski@koduk.org",
+        "comment": "Współkoordynator KOD Polonia UK, członek zarządu stowarzyszenia KOD UK. Zawodowo - informatyk dluzej niz chcialby sie przyznac; Od 24 lat poza Polska, od 20 lat na stale w Wielkiej Brytanii"
+      },
+      "Joanna Gos": { "comment": "Członek KOD Polonia UK, członek zarządu stowarzyszenia KOD UK" },
+      "Katarzyna Kasia Kozdon": { "commen": "Członek KOD Polonia UK, Skarbnik stowarzyszenia KOD UK" },
+      "Paweł Wargan": { "comment": "Członek KOD Polonia UK, członek zarządu stowarzyszenia KOD UK" },
+      "Mariusz Gąsior": { "comment": "Członek KOD Polonia UK, członek zarządu stowarzyszenia KOD UK" },
+      "Antoni Otffinowski": { "comment": "Członek KOD Polonia UK, członek zarządu stowarzyszenia KOD UK" }
+    }
+  }
+}
+
+

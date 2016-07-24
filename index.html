@@ -16,8 +16,8 @@
 
         path {
 
-            stroke: #fff;
-            stroke-width: 0;
+            stroke: #ccc;
+            stroke-width: 1px;
         }
 
             path:hover {
@@ -26,14 +26,21 @@
             .popupheader {
                 font-size: 14px;
             }
+            .contacts {
+                background-color: white;
+                border: 2px solid #ccc
+            }
     </style>
     <script src="Scripts/jquery-3.1.0.min.js"></script>
     <script src="Scripts/leaflet-0.7.3.js"></script>
 </head>
 <body>
-    <h1></h1>
+    <h1>Zagraniczne kontakty KOD</h1>
+<p>Umiesc myszke nad krajem, by zobaczyc liste osob reprezentujacych KOD w tym kraju. 
+    Kliknij na kraj zeby zobaczyc wiecej informacji</p>
+
     <p></p>
-    <div style="float: left; width: 200px;" id="contactDetails">Bara bara</div>
+    <div style="float: left; width: 200px;" id="contactDetails">Informacje o regionie</div>
     <div id="map" class="leaflet-container leaflet-fade-anim" tabindex="0" style="position: relative;">
 
         <div class="leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);">
@@ -41,19 +48,20 @@
         </div>
         <div class="leaflet-control-container">
             <div class="leaflet-top leaflet-left">
+                <!--<div class="leaflet-control-attribution leaflet-control">
+                    Powered by <a href="http://leafletjs.com/">Leaflet</a>
+                </div>-->
                 <div class="leaflet-control-zoom leaflet-bar leaflet-control">
-                    <a class="leaflet-control-zoom-in leaflet-bar-part leaflet-bar-part-top" href="" title="Zoom in">+</a><a class="leaflet-control-zoom-out leaflet-bar-part leaflet-bar-part-bottom" href="http://techslides.com/demos/leaflet/leaflet-country-zoom.html#" title="Zoom out">-</a>
+                    <a class="leaflet-control-zoom-in leaflet-bar-part leaflet-bar-part-top" href="" title="Zoom in">+</a>
+                    <a class="leaflet-control-zoom-out leaflet-bar-part leaflet-bar-part-bottom" href="http://techslides.com/demos/leaflet/leaflet-country-zoom.html#" title="Zoom out">-</a>
                 </div>
             </div>
-            <div class="leaflet-top leaflet-right" id="mapTopRight" style="background-color: white;">
+            <div class="leaflet-top leaflet-right" >
                 
             </div>
-            <div class="leaflet-bottom leaflet-left">
+            <div class="leaflet-bottom leaflet-left contacts" id="mapTopRight" >
             </div>
             <div class="leaflet-bottom leaflet-right">
-                <div class="leaflet-control-attribution leaflet-control">
-                    Powered by <a href="http://leafletjs.com/">Leaflet</a>
-                </div>
             </div>
         </div>
     </div>

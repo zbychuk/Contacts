@@ -23,12 +23,12 @@ function load(url, callback) {
     xhr.onreadystatechange = ensureReadiness;
 
     function ensureReadiness() {
-        if (xhr.readyState < 4) { return; }
+        if (xhr.readyState < 4) {return;}
 
-        if (xhr.status !== 200) { return; }
+        if (xhr.status !== 200) {return;}
 
         // all is well
-        if (xhr.readyState === 4 && callback) { callback && callback(xhr); def.resolve(xhr); }
+        if (xhr.readyState === 4 && callback) { callback && callback(xhr); def.resolve(xhr);  }
     }
 
     xhr.open('GET', url, true);
@@ -36,18 +36,13 @@ function load(url, callback) {
     return def.promise();
 }
 
-var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-var osmAttrib = 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
-var osm = new L.TileLayer(osmUrl, { minZoom: 0, maxZoom: 12, attribution: osmAttrib });
-
 
 //setup the map
-var map = new L.Map("map",
-{
-    center: [50, 22],
+var map = new L.Map("map", {
+    center: [50,22],
     zoom: 5
-}).addLayer(osm);
-//    .addLayer(new L.TileLayer("http://{s}.tile.cloudmade.com/1a1b06b230af4efdbb989ea99e9841af/998/256/{z}/{x}/{y}.png"));
+})
+    .addLayer(new L.TileLayer("http://{s}.tile.cloudmade.com/1a1b06b230af4efdbb989ea99e9841af/998/256/{z}/{x}/{y}.png"));
 var contacts, colors, regions, countries;
 var getcolors = load('/data/country_colors.json', function (xhr) { colors = JSON.parse(xhr.responseText); });
 var getcontacts = load('/data/contacts.json', function (xhr) { contacts = JSON.parse(xhr.responseText); });
@@ -55,11 +50,11 @@ var getregions = load('/data/poland-admin.json', function (xhr) { regions = JSON
 var getcountries = load('/data/world-countries.json', function (xhr) { countries = JSON.parse(xhr.responseText); });
 
 $.when(getcolors, getcontacts, getregions, getcountries)
-    .done(function () {
+    .done(function() {
 
         function addLayer(collection, opt) {
             $.each(collection.features,
-                function (i, v) {
+                function(i, v) {
                     var name = v.properties.name;
                     v.properties.style = {};
                     v.properties.style.color = colors[name] || (opt && opt.color);
@@ -71,7 +66,7 @@ $.when(getcolors, getcontacts, getregions, getcountries)
             var geojson = L.geoJson(collection,
                 {
                     onEachFeature: onEachFeature,
-                    style: function (feature) { return feature.properties && feature.properties.style; }
+                    style: function(feature) { return feature.properties && feature.properties.style; }
                 })
                 .addTo(map);
             return geojson;
@@ -81,34 +76,28 @@ $.when(getcolors, getcontacts, getregions, getcountries)
             var properties = feature.properties;
             var id = feature.id;
             var c = contacts[id];
-            function getaddrwithprefix(addr, prefix, required) {
-                var ret = addr;
-                if (addr.substr(prefix.length) !== prefix) ret = required + addr;
-                return ret;
-            }
+
             function clickFeature(e) {
                 var layer = e.target;
                 //map.fitBounds(layer.getBounds());
-                var list = '<h3>' + properties.name + '</h3>';
-
+                var list = '<h3>'+properties.name+'</h3>';
+                if (c.orgname)
+                    list += '<p><b class=popupheader>' + c.orgname + '</b></p>';
+                if (c.orgcomment)
+                    list += '<p>' + c.orgcomment + '</p>';
+                if (c.orgaddress)
+                    list += '<p>' + c.orgwebsite + '</p>';
+                if (c.orgwebsite)
+                    list+='<p><a href=' + c.orgwebsite + ' target=blank>'+c.orgwebsite+'</a></p>';
                 if (c) {
-                    if (c.orgname) list += '<p><b class=popupheader>' + c.orgname + '</b></p>';
-                    if (c.orgcomment) list += '<p>' + c.orgcomment + '</p>';
-                    if (c.orgaddress) list += '<p>' + c.orgaddress + '</p>';
-                    if (c.orgwebsite) {
-                        
-                        list += '<p><a href=' + getaddrwithprefix(c.orgwebsite,'http','http://') + ' target=blank>' + c.orgwebsite + '</a></p>';
-                    }
-                    if (c.orgemail) list += '<p><a href='+getaddrwithprefix(c.orgemail, 'mailto', 'mailto://')  + ' target=blank>' + c.orgemail + '</a></p>';
-
                     var people = c.people;
                     var name;
                     for (name in people) {
                         if (people.hasOwnProperty(name)) {
                             var contact = people[name];
                             list += '<h4>' + name + '</h4>';
-                            if (contact.comment) list += '<p>' + contact.comment + '</p>';
-                            if (contact.email) list += '<p><a href=' + getaddrwithprefix(contact.email, 'mailto', 'mailto://') + ' target=blank>' + contact.email + '</a></p>';
+                            if (contact.comment) list+='<p>' + contact.comment + '</p>';
+                            if (contact.email) list += '<p>E-Mail: ' + contact.email + '</p>';
                             if (contact.phone) list += '<p>Phone: ' + contact.phone + '</p>';
                         }
                     }
@@ -120,19 +109,19 @@ $.when(getcolors, getcontacts, getregions, getcountries)
             properties.popup = '<b class=popupheader>' + feature.properties.name + '</b>';
 
             if (c) {
-                if (c.orgname)
-                    properties.popup = '<p><b class=popupheader>' + c.orgname + (c.orgwebsite ? '</b>(' + c.orgwebsite + ')</p>' : '</b></p>');
+                if(c.orgname)
+                    properties.popup = '<p><b class=popupheader>' + c.orgname + (c.orgwebsite?'</b>('+c.orgwebsite+')</p>':'</b></p>');
                 $.each(c.people,
-                    function (i, v) {
+                    function(i, v) {
                         properties.popup += '<p><i>' + i + '</i></p>';
                     });
             }
             layer.on('mouseover',
-                function (e) {
+                function(e) {
                     $('#mapTopRight').html(properties.popup);
                 })
             .on('mouseout',
-                function (e) {
+                function(e) {
                     $('#mapTopRight').html('');
 
                 })
@@ -146,9 +135,9 @@ $.when(getcolors, getcontacts, getregions, getcountries)
         var overlayMaps = {
             "Polish regions": regionlayer
         };
-        L.control.layers(null, overlayMaps, { position: 'topright' }).addTo(map);
+        L.control.layers(null,overlayMaps, {position:'topright'}).addTo(map);
         map.on({
-            click: function () {
+            click: function() {
                 //map.setView([0, 0], 4.5);
             }
         });
